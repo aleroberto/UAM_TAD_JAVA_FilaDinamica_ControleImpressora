@@ -1,7 +1,13 @@
-class ControlaImpressao{
-	FilaDinamica filaDinamica = new FilaDinamica();
+public class ControlaImpressao {
 
-	public static void main(String[] args) {
-		System.out.println("comercamos");
-	}
+    public static void main(String[] args) {
+        FilaDinamica filaDinamica = new FilaDinamica();
+
+        filaDinamica.enqueue(1);
+        filaDinamica.enqueue(2);
+        filaDinamica.enqueue(3);
+
+        System.out.println("Fila de impressao:");
+        filaDinamica.print();
+    }
 }

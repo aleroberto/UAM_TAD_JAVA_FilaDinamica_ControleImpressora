@@ -1,13 +1,13 @@
 public class FilaDinamica {
-	No inicio;
-	No fim;
+	private No inicio;
+	private No fim;
 
 	public FilaDinamica() {
 		this.inicio = null;
 		this.fim = null;
 	}
 
-	void print() {
+	public void print() {
 		if (isEmpty()) {
 			System.out.println("vazia");
 		} else {
@@ -19,7 +19,7 @@ public class FilaDinamica {
 		}
 	}
 
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return (inicio == null);
 	}
 
